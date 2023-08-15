@@ -67,8 +67,8 @@ end
 array.random = function(start, fim, size)
     local result = {}
     local range = fim - start + 1
-    for i = 0, i < size do
-        local randomInt = math.floor(random() * range) + start
+    for i = 0, size do
+        local randomInt = math.floor(math.random() * range) + start
         result.push(randomInt)
     end
     return result
